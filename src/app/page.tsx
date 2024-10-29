@@ -1,7 +1,7 @@
 import { Loader } from "@googlemaps/js-api-loader"
 
 const loader = new Loader({
-  apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY, //O process.env serve para que o node leia a variável de contexto
+  apiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || "", //O process.env serve para que o node leia a variável de contexto
   version: "weekly",
 })
 
